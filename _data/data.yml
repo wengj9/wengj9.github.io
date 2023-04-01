@@ -38,13 +38,10 @@ sidebar:
   interests:
     title: Interests
     info:
-      - item: Climbing
-        link:
-
-      - item: Snowboarding
-        link:
-
       - item: Cooking
+        link:
+
+      - item: Hiking
         link:
 
 # career-profile:
@@ -73,41 +70,33 @@ education:
     - degree: BSE in Computer Science
       university: University of Michigan - Ann Arbor
       time: September 2018 - December 2021
-      # details: |
-      #   Describe your study here lorem ipsum dolor sit amet, consectetuer
-      #   adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-      #   sociis natoque penatibus et magnis dis parturient montes, nascetur
-      #   ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-      #   pretium quis, sem.
-      #     - Bullet point
-      #     - Bullet point
+
+    - degree: High School Diploma
+      university: Bronx High School of Science
+      time: September 2014 - June 2018
+
 experiences:
   title: Experiences
   info:
     - role: Graduate Student Instructor
       time: January 2022 - Present
       company: University of Michigan, Ann Arbor
-      # details: |
-      #   Describe your role here lorem ipsum dolor sit amet, consectetuer
-      #   adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      #   Cum sociis natoque penatibus et magnis dis parturient montes,
-      #   nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      #   pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-      #   enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-      #   error sit voluptatem accusantium doloremque laudantium, totam rem
-      #   aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-      #   architecto beatae vitae dicta sunt explicabo.
-      #     - Bullet point
-      #     - Bullet point
+
     - role: Software Engineering Intern
       time: May 2022 - August 2022
       company: Snap Inc, Santa Monica
+
     - role: Instructional Aide
       time: August 2021 - December 2021
       company: University of Michigan, Ann Arbor
+
     - role: Software Development Intern
-      time: June 2021 - August 2021
-      company: Amazon, New York
+      time: May 2021 - August 2021
+      company: Amazon Web Services, New York
+
+    - role: Software Development Intern
+      time: June 2020 - August 2020
+      company: Amazon Web Services, Seattle (virtual)
       # details: |
       #   Describe your role here lorem ipsum dolor sit amet, consectetuer
       #   adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
@@ -124,63 +113,6 @@ projects:
     - title: e100-asm-support
       link: "https://github.com/wengj9/e100-asm-support"
       tagline: "A Visual Studio Code extension to provide syntax highlighting for E100 ASM."
-
-    # - title: DevStudio
-    #   link: "#"
-    #   tagline: "A responsive website template designed to help web developers/designers market their services."
-
-    # - title: Tempo
-    #   link: "#"
-    #   tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
-
-    # - title: Atom
-    #   link: "#"
-    #   tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-    # - title: Delta
-    #   link: "#"
-    #   tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
-
-# oss:
-#   title: OSS Contributions
-#   intro: >
-#     You can list your open source software contributions in this
-#     section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-#     Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
-#   contributions:
-#     - title: Tempo
-#       link: "#"
-#       tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
-
-#     - title: Atom
-#       link: "#"
-#       tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-#     - title: Delta
-#       link: "#"
-#       tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
-
-# publications:
-#   title: Publications
-#   intro: |
-#     You can list your publications in this section. Lorem ipsum dolor sit
-#     amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-#     bibendum fringilla a eu lectus.
-#   papers:
-#     - title: The Art of Computer Programming
-#       link: "#"
-#       authors: Donald E. Knuth
-#       conference: Addison-Wesley, 1968
-
-#     - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-#       link: "#"
-#       authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-#       conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
-
-#     - title: A syntax directed compiler for Algol 60
-#       link: "#"
-#       authors: Edgar T. Irons
-#       conference: "Comm. ACM 4 (1961), 51–55"
 
 skills:
   title: Skills &amp; Proficiency
