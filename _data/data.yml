@@ -14,7 +14,7 @@ sidebar:
   # Sidebar links
   email: wengj9@gmail.com
   phone: +1 (917) 838-6225
-  timezone: America/New York Timezone
+  timezone: America/Los Angeles Timezone
   citizenship: United States
   # website: blog.webjeda.com #do not add http://
   linkedin: wengjames
@@ -78,6 +78,14 @@ education:
 experiences:
   title: Experiences
   info:
+    - role: Software Engineer
+      time: August 2023 - Present
+      company: Luminary Cloud, Redwood City
+
+    - role: Codepoint Fellow
+      time: August 2023 - Present
+      company: Sutter Hill Ventures, San Francisco Bay Area
+
     - role: Graduate Student Instructor
       time: January 2022 - May 2023
       company: University of Michigan, Ann Arbor
