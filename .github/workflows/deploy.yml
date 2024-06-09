@@ -3,7 +3,7 @@ name: Deploy site
 on:
   push:
     branches:
-      - master
+      - dev
       - main
     paths:
       - "assets/**"
@@ -29,7 +29,7 @@ on:
       - "!README.md"
   pull_request:
     branches:
-      - master
+      - dev
       - main
     paths:
       - "assets/**"
@@ -68,6 +68,8 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_branch }}
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -98,8 +100,11 @@ jobs:
         run: |
           pnpm install -g purgecss
           purgecss -c purgecss.config.js
-      - name: Deploy 🚀
-        if: github.event_name != 'pull_request'
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
         with:
-          folder: _site
+         apiToken: ${{ secrets.API_TOKEN }} # Cloudflare API token
+         accountId: ${{ secrets.ACCOUNT_ID }} # Cloudflare account ID
+         projectName: wengj9-github-io # your Cloudflare Pages project name
+         directory: _site
+         branch: ${{ github.event.workflow_run.head_branch }}
