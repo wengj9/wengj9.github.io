@@ -77,7 +77,7 @@
       "startDate": "2021-05-16",
       "endDate": "2021-08-17",
       "location": "New York, NY",
-      "summary": "Built a new service to calculate dataset metadata",
+      "summary": "Built a new service to calculate metadata for AWS Data Exchange datasets",
       "highlights": ["Typescript", "AWS"]
     }
   ],
