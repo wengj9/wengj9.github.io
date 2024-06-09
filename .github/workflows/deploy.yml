@@ -83,7 +83,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
+          cache: "pnpm"
       - name: Update _config.yml ⚙️
         uses: fjogeleit/yaml-update-action@main
         with:
@@ -103,8 +103,8 @@ jobs:
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
-         apiToken: ${{ secrets.API_TOKEN }} # Cloudflare API token
-         accountId: ${{ secrets.ACCOUNT_ID }} # Cloudflare account ID
-         projectName: wengj9-github-io # your Cloudflare Pages project name
-         directory: _site
-         branch: ${{ github.event.workflow_run.head_branch }}
+          apiToken: ${{ secrets.API_TOKEN }} # Cloudflare API token
+          accountId: ${{ secrets.ACCOUNT_ID }} # Cloudflare account ID
+          projectName: wengj9-github-io # your Cloudflare Pages project name
+          directory: _site
+          branch: ${{ github.event.workflow_run.head_branch }}
