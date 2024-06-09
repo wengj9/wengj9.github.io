@@ -234,7 +234,6 @@ exclude:
   - vendor
   - _pages/profiles.md # not needed yet
   - _pages/dropdown.md # not needed
-  - _pages/projects.md # No projects (yet)
 keep_files:
   - CNAME
   - .nojekyll
