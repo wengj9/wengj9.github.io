@@ -23,6 +23,9 @@ jobs:
   check:
     # available images: https://github.com/actions/runner-images#available-images
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20]
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
@@ -31,6 +34,15 @@ jobs:
         with:
           ruby-version: "3.2.2"
           bundler-cache: true
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
       - name: Update _config.yml ⚙️
         uses: fjogeleit/yaml-update-action@main
         with:
@@ -48,7 +60,7 @@ jobs:
           bundle exec jekyll build
       - name: Purge unused CSS 🧹
         run: |
-          npm install -g purgecss
+          pnpm install -g purgecss
           purgecss -c purgecss.config.js
       - name: Get Chromium version 🌐
         # https://github.com/GoogleChromeLabs/chrome-for-testing?tab=readme-ov-file#other-api-endpoints
@@ -63,11 +75,11 @@ jobs:
           chrome-version: ${{ env.CHROMIUM_VERSION }}
       - name: Install chromedriver 🚗
         run: |
-          npm install -g chromedriver@$CHROMIUM_VERSION
+          pnpm install -g chromedriver@$CHROMIUM_VERSION
       - name: Run axe 🪓
         # https://github.com/dequelabs/axe-core-npm/tree/develop/packages/cli
         run: |
-          npm install -g @axe-core/cli
-          npm install -g http-server
+          pnpm install -g @axe-core/cli
+          pnpm install -g http-server
           http-server _site/ &
           axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:8080/${{ github.event.inputs.url || env.URL }} --load-delay=1500 --exit
