@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started as a Codepoint Fellow at SHV and Software Engineer at Luminary Clouds
+Started as a Codepoint Fellow at SHV and Software Engineer at Luminary Cloud
