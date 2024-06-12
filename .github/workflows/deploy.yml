@@ -86,8 +86,8 @@ jobs:
           cache: "pnpm"
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
-          cache: 'pip' # caching pip dependencies
+          python-version: "3.10"
+          cache: "pip" # caching pip dependencies
       - name: Update _config.yml ⚙️
         uses: fjogeleit/yaml-update-action@main
         with:
