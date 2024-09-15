@@ -19,7 +19,19 @@
       "position": "Software Engineer",
       "location": "San Mateo, CA",
       "url": "https://observeinc.com",
-      "startDate": "2024-02-12"
+      "startDate": "2024-08-14",
+      "highlights": ["Golang"],
+      "summary": "Working on the compiler team!"
+    },
+    {
+      "name": "Observe, Inc.",
+      "position": "Software Engineer",
+      "location": "San Mateo, CA",
+      "url": "https://observeinc.com",
+      "startDate": "2024-02-12",
+      "endDate": "2024-08-09",
+      "highlights": ["Typescript", "React.js"],
+      "summary": "Designed and created new time picker for the Observe product"
     },
     {
       "name": "Luminary Cloud",
