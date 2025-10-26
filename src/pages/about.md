@@ -3,35 +3,35 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, accessible and SEO-friendly blog theme built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
+Software engineer located in the San Francisco Bay Area. Interested in backend systems work!
 
-![Astro Paper](public/astropaper-og.jpg)
+## Experience
 
-AstroPaper provides a solid foundation for blogs, or even portfolios\_ with full markdown support, built-in dark mode, and a clean layout that works out-of-the-box.
+### Observe, Inc.
 
-The blog posts in this theme also serve as guides, docs or example articles\_ making AstroPaper a flexible starting point for your next content-driven site.
+- Software Engineer (August 2024 - Present): Working on various parts of the data backend
+- Software Engineer (February 2024 - August 2024): Developed a new time picker for the frontend
 
-## Features
+### Sutter Hill Ventures
 
-AstroPaper comes with a set of useful features that make content publishing easy and effective:
+- Codepoint Fellow (August 2023 - August 2024): Rotational program at two SHV-backed companies (first cohort)
 
-- SEO-friendly
-- Fast performance
-- Light & dark mode
-- Highly customizable
-- Organizable blog posts
-- Responsive & accessible
-- Static search with [PageFind](https://pagefind.app/)
-- Automatic social image generation
+### Luminary Cloud
 
-and so much more.
+- Software Engineer (August 2023 - February 2024): Reduced compute allocation times allowing for real-time geometry modification in the Luminary product
 
-## Show your support
+### University of Michigan
 
-If you like [AstroPaper](https://github.com/satnaing/astro-paper), consider giving it a star ⭐️.
+- Graduate Student Instructor (January 2022 - May 2023): Taught EECS 482 (Introduction to Operating Systems) and EECS 280 (Intro to Programming)
+- Instructional Assistant (August 2021 - December 2021): Taught EECS 482 (Introduction to Operating Systems)
 
-Found a bug 🐛 or have an improvement ✨ in mind? Feel free to open an [issue](https://github.com/satnaing/astro-paper/issues), submit a [pull request](https://github.com/satnaing/astro-paper/pulls) or start a [discussion](https://github.com/satnaing/astro-paper/discussions).
+## Education
 
-If you find this theme helpful, you can also [sponsor me on GitHub](https://github.com/sponsors/satnaing) or [buy me a coffee](https://buymeacoffee.com/satnaing) to show your support — every penny counts.
+### University of Michigan
 
-Kyay zuu! 🙏🏼
+- Master of Science in Computer Science (January 2022 - May 2023, GPA: 3.8/4.0)
+- Bachelor of Science in Computer Science (September 2018 - December 2021, GPA: 3.8/4.0)
+
+### Bronx High School of Science
+
+- High School Diploma (September 2014 - June 2018, Advanced Regents with Honors)
