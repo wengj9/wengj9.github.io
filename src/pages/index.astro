@@ -12,6 +12,8 @@ import IconRss from "@/assets/icons/IconRss.svg";
 import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
 import { SITE } from "@/config";
 import { SOCIALS } from "@/constants";
+import pfpImage from "@/assets/images/pfp.jpg";
+import { Image } from 'astro:assets';
 
 const posts = await getCollection("blog");
 
@@ -60,7 +62,9 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
           class="underline decoration-dashed underline-offset-4 hover:text-accent"
           href="https://os.eecs.umich.edu/">courses!</LinkButton
         >
+        You'll hopefully find something interesting on the site whether it be a post, some images, or something else that I haven't even thought of yet.
       </p>
+      <Image src={pfpImage} alt="A bird sitting on a nest of eggs." width={200} height={200} />
       {
         // only display if at least one social link is enabled
         SOCIALS.length > 0 && (
