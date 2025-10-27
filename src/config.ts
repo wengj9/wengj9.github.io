@@ -3,7 +3,7 @@ export const SITE = {
   author: "James Weng",
   profile: "https://jamesweng.com/",
   desc: "A portfolio/blog of mine.",
-  title: "James Weng",
+  title: "James' Thoughts",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
