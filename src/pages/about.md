@@ -25,6 +25,15 @@ Software engineer located in the San Francisco Bay Area. Interested in backend s
 - Graduate Student Instructor (January 2022 - May 2023): Taught EECS 482 (Introduction to Operating Systems) and EECS 280 (Intro to Programming)
 - Instructional Assistant (August 2021 - December 2021): Taught EECS 482 (Introduction to Operating Systems)
 
+### Snap, Inc.
+
+- Software Engineering Intern (May 2022 - August 2022)
+
+### Amazon Web Services
+
+- Software Engineering Intern (May 2021 - August 2021)
+- Software Engineering Intern (June 2020 - August 2020)
+
 ## Education
 
 ### University of Michigan
