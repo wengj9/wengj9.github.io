@@ -7,9 +7,12 @@ Software engineer located in the San Francisco Bay Area. Interested in backend s
 
 ## Experience
 
+## Snowflake
+- Software Engineer (February 2026 - Present): Working in the logs area of the Observability Business Unit (aka Observe)
+
 ### Observe, Inc.
 
-- Software Engineer (August 2024 - Present): Working on various parts of the data backend
+- Software Engineer (August 2024 - February 2026): Working on various parts of the data backend
 - Software Engineer (February 2024 - August 2024): Developed a new time picker for the frontend
 
 ### Sutter Hill Ventures
