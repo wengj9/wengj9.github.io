@@ -8,6 +8,7 @@ Software engineer located in the San Francisco Bay Area. Interested in backend s
 ## Experience
 
 ## Snowflake
+
 - Software Engineer (February 2026 - Present): Working in the logs area of the Observability Business Unit (aka Observe)
 
 ### Observe, Inc.
