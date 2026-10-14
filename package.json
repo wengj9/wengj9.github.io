@@ -19,7 +19,7 @@
     "@astrojs/sitemap": "^3.7.4",
     "@resvg/resvg-js": "^2.6.2",
     "@tailwindcss/vite": "^4.3.3",
-    "astro": "^7.3.5",
+    "astro": "^7.3.8",
     "dayjs": "^1.11.23",
     "lodash.kebabcase": "^4.1.1",
     "remark-collapse": "^0.1.2",
