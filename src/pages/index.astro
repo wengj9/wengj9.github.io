@@ -46,25 +46,42 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 
       <p>Hi, I'm James 👋</p>
       <p>
-        I'm a software engineer located in the Bay Area, currently at <LinkButton
-          class="underline decoration-dashed underline-offset-4 hover:text-accent"
-          href="https://snowflake.com">Snowflake</LinkButton
-        > working in the Observability Business Unit (formerly <LinkButton
-          class="underline decoration-dashed underline-offset-4 hover:text-accent"
-          href="https://observeinc.com">Observe, Inc.</LinkButton
-        >). In the recent past, I was a Codepoint Fellow at <LinkButton
-          class="underline decoration-dashed underline-offset-4 hover:text-accent"
-          href="https://shv.com">Sutter Hill Ventures</LinkButton
-        > as part of the first cohort (2023-2024). Even further back, I was a (graduate)
-        teaching assistant at the University of Michigan for a <LinkButton
-          class="underline decoration-dashed underline-offset-4 hover:text-accent"
-          href="https://eecs280.org/">few</LinkButton
-        >
-        {" "}
+        I'm a software engineer located in the Bay Area, currently at{" "}
         <LinkButton
           class="underline decoration-dashed underline-offset-4 hover:text-accent"
-          href="https://os.eecs.umich.edu/">courses</LinkButton
-        >! You'll hopefully find something interesting on the site whether it be
+          href="https://snowflake.com"
+        >
+          Snowflake
+        </LinkButton>{" "}
+        working in the Observability Business Unit (formerly{" "}
+        <LinkButton
+          class="underline decoration-dashed underline-offset-4 hover:text-accent"
+          href="https://observeinc.com"
+        >
+          Observe, Inc.
+        </LinkButton>
+        ). In the recent past, I was a Codepoint Fellow at{" "}
+        <LinkButton
+          class="underline decoration-dashed underline-offset-4 hover:text-accent"
+          href="https://shv.com"
+        >
+          Sutter Hill Ventures
+        </LinkButton>{" "}
+        as part of the first cohort (2023-2024). Even further back, I was a
+        (graduate) teaching assistant at the University of Michigan for a{" "}
+        <LinkButton
+          class="underline decoration-dashed underline-offset-4 hover:text-accent"
+          href="https://eecs280.org/"
+        >
+          few
+        </LinkButton>{" "}
+        <LinkButton
+          class="underline decoration-dashed underline-offset-4 hover:text-accent"
+          href="https://os.eecs.umich.edu/"
+        >
+          courses
+        </LinkButton>
+        ! You'll hopefully find something interesting on the site whether it be
         a post, some images, or something else that I haven't even thought of
         yet.
       </p>
@@ -87,35 +104,31 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 
     <Hr />
 
-    {
-      featuredPosts.length > 0 && (
-        <>
-          <section id="featured" class="pt-12 pb-6">
-            <h2 class="text-2xl font-semibold tracking-wide">Featured</h2>
-            <ul>
-              {featuredPosts.map(data => (
-                <Card variant="h3" {...data} />
-              ))}
-            </ul>
-          </section>
-          {recentPosts.length > 0 && <Hr />}
-        </>
-      )
-    }
-
-    {
-      recentPosts.length > 0 && (
-        <section id="recent-posts" class="pt-12 pb-6">
-          <h2 class="text-2xl font-semibold tracking-wide">Recent Posts</h2>
+    {featuredPosts.length > 0 && (
+      <>
+        <section id="featured" class="pt-12 pb-6">
+          <h2 class="text-2xl font-semibold tracking-wide">Featured</h2>
           <ul>
-            {recentPosts.map(
-              (data, index) =>
-                index < SITE.postPerIndex && <Card variant="h3" {...data} />
-            )}
+            {featuredPosts.map(data => (
+              <Card variant="h3" {...data} />
+            ))}
           </ul>
         </section>
-      )
-    }
+        {recentPosts.length > 0 && <Hr />}
+      </>
+    )}
+
+    {recentPosts.length > 0 && (
+      <section id="recent-posts" class="pt-12 pb-6">
+        <h2 class="text-2xl font-semibold tracking-wide">Recent Posts</h2>
+        <ul>
+          {recentPosts.map(
+            (data, index) =>
+              index < SITE.postPerIndex && <Card variant="h3" {...data} />
+          )}
+        </ul>
+      </section>
+    )}
 
     <div class="my-8 text-center">
       <LinkButton href="/posts/">
